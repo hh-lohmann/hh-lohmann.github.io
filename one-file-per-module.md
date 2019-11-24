@@ -2,11 +2,24 @@
 
 A [Coding maxim](coding-maxims)
 
-# Goals
 
-* https://en.wikipedia.org/wiki/Single_responsibility_principle
 
-# References
+## Goals
+
+* [Separation of concerns](https://en.wikipedia.org/wiki/Separation_of_concerns)
+* [Single responsibility](https://en.wikipedia.org/wiki/Single_responsibility_principle)
+* [Proper tools](proper-tools)
+* [Modular programming](https://en.wikipedia.org/wiki/Modular_programming)
+
+
+
+## Implementation
+
+* [Code generation](code-generation)
+
+
+
+## References
 
 * [Why one module per file?](https://github.com/gocardless/angularjs-style-guide/issues/14)
 * [Separate modules.gypi into one file per module](https://groups.google.com/a/chromium.org/forum/#!msg/feature-media-reviews/SbXiCdflBjs/JDW64AXG6ToJ)
