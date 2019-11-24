@@ -14,6 +14,8 @@ A [Coding maxim](coding-maxims)
 ## Implementation
 
 * [One file per module](one-file-per-module)
+* [Code generation](code-generation)
+* [(Build) Toolchain](https://en.wikipedia.org/wiki/Toolchain)
 
 
 
