@@ -6,6 +6,7 @@ A [Coding maxim](coding-maxims)
 
 ## Goals
 
+* [Fine grained version control](fine-grained-version-control)
 * [Separation of concerns](https://en.wikipedia.org/wiki/Separation_of_concerns)
 * [Single responsibility](https://en.wikipedia.org/wiki/Single_responsibility_principle)
 * [Proper tools](proper-tools)
