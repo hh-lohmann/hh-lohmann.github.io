@@ -3,7 +3,7 @@
 
 ## Goals
 
-* implement [Coding maxim](coding-maxims)
+* implement [Coding maxims](coding-maxims)
 
 
 ## Implementation
