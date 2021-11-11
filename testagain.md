@@ -1,5 +1,5 @@
 ---
-layout: testo.html
+layout: testo
 ---
 
 Waiting again and again ...
