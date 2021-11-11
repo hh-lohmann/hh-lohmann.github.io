@@ -1,5 +1,5 @@
 ---
-layout: 404page.html
+layout: page404
 ---
 
 Shiny biny
