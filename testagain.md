@@ -1,5 +1,5 @@
 ---
-layout: 404page.html
+layout: testo.html
 ---
 
-Waiting again ...
+Waiting again and again ...
