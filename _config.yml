@@ -2,3 +2,5 @@ plugins:
   - jekyll-redirect-from
 whitelist:
   - jekyll-redirect-from
+exclude:
+  - "[0-9]* *"
