@@ -1,5 +1,8 @@
-# Deny access to hidden files - files that start with a dot (.)
-<FilesMatch "^\.">
-Order allow,deny
-Deny from all
-</FilesMatch>
+# ! GitHub-Pages-Defaults / -Lösungen für Pull nach PHP-Umgebungen nachahmen
+
+# custom 404-Seite (auf GitHub Pages Standard)
+ErrorDocument 404 /_layouts/404page.html
+
+# dotfiles ausblenden (auf GitHub Pages Standard)
+RewriteEngine on
+RewriteRule (^\.|/\.) /_layouts/404page.html
