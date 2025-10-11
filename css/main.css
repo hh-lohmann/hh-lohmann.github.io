@@ -1,0 +1,53 @@
+---
+---
+
+a {
+  color: #630 ;
+  font-weight: 550 ;
+}
+
+a:before {
+  content: '\2198  ' ;
+  /*{% comment %}
+    * ! ohne explizite font-family auf iOS "base+VS16 (emoji)" (=> https://en.wikipedia.org/wiki/Arrows_(Unicode_block)#Emoji) statt UTF-8-Pfeilen
+      * Lösung von https://forum.squarespace.com/topic/173364-force-text-of-arrow-symbol-%E2%86%97-for-ios/#comment-684801_wrap
+  {% endcomment %}*/
+  font-family: 'Helvetica Neue', system-ui;
+}
+
+a.home:before {
+  content: '\2196  ' ;
+}
+
+/*{% comment %}
+  * Selektor von https://stackoverflow.com/a/26899019/15979256
+{% endcomment %}*/
+a[href*='//']:before {
+  content: '\2197  ' ;
+}
+
+a[href='#']:before {
+  content: '' ;
+}
+
+
+body {
+  color: saddlebrown ;
+  margin: auto ;
+  max-width: 40em ;
+  padding: 0 1em ;
+}
+
+div.page_end {
+  margin: 4em 0 0 40% ;
+  padding: 100vh 0 2em 0 ;
+}
+
+div.page_start {
+  margin: 1em 40% 0.5em 0 ;
+}
+
+div.page_start_end_marker {
+  border-top: thick dotted ;
+  width: 60% ;
+}

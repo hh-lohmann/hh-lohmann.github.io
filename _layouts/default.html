@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name=generator content="Jekyll + Human know-how">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ site.title }}</title>
+    <link rel="stylesheet" href="/css/main.css">
+  </head>
+  <body>
+    <div class="page_start page_start_end_marker"></div>
+    {% if page.url != '/' %}
+      <nav>
+        <a class="home" href="/">Frontend hh.lohmann</a>
+      </nav>
+      <h1>{{ page.title }}</h1>
+    {% endif %}
+    <section>
+      {{ content }}
+    </section>
+    <div class="page_end page_start_end_marker">
+      <a class="top" href="#">[ zum Seitenanfang ]</a>
+    </div>
+    <script>
+      document.querySelectorAll( 'a' ).forEach(
+        ( hit, index ) => {
+          if( hit.className.includes('home') ) return ;
+          if( hit.className.includes('top') ) return ;
+          if( ! hit.href.includes( document.location.host ) ) hit.title = 'externer Link' ;
+          if( hit.href.includes( document.location.host ) ) hit.title = 'interner Link' ;
+        }
+      )
+    </script>
+  </body>
+</html>

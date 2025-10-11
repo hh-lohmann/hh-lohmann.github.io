@@ -1,0 +1,22 @@
+title: "Frontend hh.lohmann"
+
+plugins:
+  - jekyll-redirect-from
+
+whitelist:
+  - jekyll-redirect-from
+
+exclude:
+  - "[0-9]*[ _]*"
+
+defaults:
+  -
+    scope:
+      path: "css"
+    values:
+      layout: "css"
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
