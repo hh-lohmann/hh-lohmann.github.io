@@ -1,11 +1,16 @@
 <!doctype html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="utf-8">
     <meta name=generator content="Jekyll + Human know-how">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ site.title }}</title>
     <link rel="stylesheet" href="/css/main.css">
+    {%  if page.url == '/404.html' %}
+      <link rel="stylesheet" href="/css/404.css">
+      <title>Page not found</title>
+    {% else %}
+      <title>{{ site.title }}</title>
+    {% endif %}
   </head>
   <body>
     <div class="page_start page_start_end_marker"></div>
@@ -14,6 +19,14 @@
         <a class="home" href="/">Frontend hh.lohmann</a>
       </nav>
       <h1>{{ page.title }}</h1>
+    {% endif %}
+    <h2>x{{ site.last_change }}</h2>
+    <h2>x{{ site.package }}</h2>
+    <h2>x{{ page.name }}</h2>
+    <h2>x{{ page.url }}</h2>
+    {% assign last = value %}
+    {% if LAST_CHANGE %}
+      <h2>Version: {% include_relative LAST_CHANGE %}</h2>
     {% endif %}
     <section>
       {{ content }}
@@ -32,4 +45,7 @@
       )
     </script>
   </body>
+  <script>
+    alert( 'Heyho!' ) ;
+  </script>
 </html>

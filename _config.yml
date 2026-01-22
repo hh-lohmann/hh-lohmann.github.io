@@ -1,15 +1,33 @@
+package: "hh-lohmann.github.io"
+
 title: "Frontend hh.lohmann"
+last_change: 2026-01-20T18:49:43
 
 plugins:
-  - jekyll-redirect-from
+  - jekyll-readme-index
+  - jekyll-relative-links
+  - jekyll-remote-theme
+  - jekyll-optional-front-matter
 
-whitelist:
-  - jekyll-redirect-from
+# whitelist:
+#   - jekyll-redirect-from
+
+# remote_theme: just-the-docs/just-the-docs
+remote_theme: pages-themes/primer
 
 exclude:
   - "[0-9]*[ _]*"
 
+include:
+  - CONTRIBUTING.md
+  - README.md
+
 defaults:
+  -
+    scope:
+      path: "README.md"
+    values:
+      permalink: /404.html
   -
     scope:
       path: "css"
